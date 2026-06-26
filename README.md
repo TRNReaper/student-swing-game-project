@@ -1,4 +1,4 @@
-## Simple Tic-Tac-Toe Game with Java Swing, Login, and Statistics
+# Simple Tic-Tac-Toe Game with Java Swing, Login, and Statistics
 
 ## Student Information
 | Student | Information |
