@@ -19,24 +19,27 @@ This project is a simple Tic-Tac-Toe game built using Java Swing for Programming
 Database used: MySQL (One table configuration requirement)
 
 ## How to Run
-- Create the database in MySQL Server CREATE DATABASE game_project;.
-- Import schema.sql found in the /database folder to generate the players table and sample entries.
+- Create the database in MySQL Server named `game_project`;.
+- Import `schema.sql` found in the` /database` folder to generate the players table and sample entries.
 - Open the Java project in your preferred IDE (IntelliJ IDEA, Eclipse, NetBeans, etc.).
-- Add the mysql-connector-j (JDBC driver) to your project libraries.
-- Configure DatabaseManager.java by typing your specific USER and PASSWORD connection credentials.
-- Run Main.java to launch the Swing application.
+- Add the `mysql-connector-j` (JDBC driver) to your project libraries.
+- Configure `DatabaseManager.java` by typing your specific USER and PASSWORD connection credentials.
+- Run `Main.java` to launch the Swing application.
 
 ## Class Explanation
-- Main: Starts the application and manages the SwingUtilities.invokeLater thread mapping.
-- DatabaseManager: Provides the standardized JDBC MySQL Connection stream across the system.
-- Player: The core simple POJO model class storing the state of a player/user.
-- PlayerService: Executes SQL tasks like validations (login()), leaderboard requests (getTopFives()), and database updating (updateStatistics()).
-- GameLogic: Calculates valid movements, array validations, checkWinner() algorithms, and computer generation.
-- LoginFrame: Java Swing container rendering the Username/Password security screen.
-- MainMenuFrame: Dashboard container enabling navigation to Game, Stats, Leaderboard, or safe Application Exit.
-- GameFrame: Displays 9 connected EventListener GUI buttons corresponding to the GameLogic arrays.
-- StatisticsFrame: Short-lived window dynamically calling the live player Object to view total score sums.
-- TopScorersFrame: Displays playerService.getTopFives() through a DefaultTableModel dynamically placed in a JTable component.
+
+| Class | Responsibility |
+| :--- | :--- |
+| `Main` | Starts the application and manages the SwingUtilities.invokeLater thread mapping. |
+| `DatabaseManager` | Provides the standardized JDBC MySQL Connection stream across the system. |
+| `Player` | Model class — stores player data (id, username, wins, losses, draws, score) |
+| `PlayerService` | Executes SQL tasks like validations (login()), leaderboard requests (getTopFives()), and database updating (updateStatistics()). |
+| `GameLogic` | Calculates valid movements, array validations, checkWinner() algorithms, and computer generation. |
+| `LoginFrame` |Java Swing container rendering the Username/Password security screen. |
+| `MainMenuFrame` | Dashboard container enabling navigation to Game, Stats, Leaderboard, or safe Application Exit. |
+| `GameFrame` | Swing window for playing Tic-Tac-Toe (3x3 button grid) |
+| `StatisticsFrame` | Short-lived window dynamically calling the live player Object to view total score sums. |
+| `TopScorersFrame` | Displays playerService.getTopFives() through a DefaultTableModel dynamically placed in a JTable component |
 
 ## Screenshots
 
