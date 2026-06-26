@@ -1,9 +1,11 @@
 ## Simple Tic-Tac-Toe Game with Java Swing, Login, and Statistics
 
 ## Student Information
-Name: Rasya Hafidz Atharachman
-Student ID: 5026251031
-Class: A
+| Student | Information |
+| :--- | :--- |
+| Name: | Rasya Hafidz Atharachman |
+| Student ID: | 5026251031 |
+| Class: | A |
 
 ## Project Description
 This project is a simple Tic-Tac-Toe game built using Java Swing for Programming Fundamental. The application includes database-driven secure login, real-time game statistics tracking, and a Top 5 scorer leaderboard feature. The computer moves randomly based on simple Game Logic arrays.
@@ -56,6 +58,5 @@ Database used: MySQL (One table configuration requirement)
 ### 3. Halaman Top Scorers
 ![Top Scorers](screenshots/top-scorers-window.png)
 
-Video Link
-
-YouTube Demonstration: [Paste your YouTube video link here]
+## Video Link
+YouTube Demonstration: [[YouTube video link here]](https://youtu.be/lsAXBRpkkIE)
